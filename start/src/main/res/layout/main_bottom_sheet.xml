@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="Filter"
+            app:layout_constraintBottom_toTopOf="@id/filterGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <RadioGroup
+            android:id="@+id/filterGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@id/filterButton1"
+            android:clipToPadding="false"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title">
+
+            <RadioButton
+                android:id="@+id/filterButton1"
+                style="@style/TextAppearance.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Filter 1" />
+
+            <RadioButton
+                android:id="@+id/filterButton2"
+                style="@style/TextAppearance.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Filter 2" />
+
+            <RadioButton
+                android:id="@+id/filterButton3"
+                style="@style/TextAppearance.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Filter 3" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
