@@ -8,12 +8,13 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_margin="8dp"
-        android:background="?selectableItemBackground"
         app:cardElevation="8dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground">
 
             <ImageView
                 android:id="@+id/thumbnailView"

@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             setSupportActionBar(toolbar)
 
             whaleCard.run {
-                root.setOnClickListener {
+                card.setOnClickListener {
                     navigateToWeb()
                 }
                 favoriteButton.setOnClickListener {
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             pashaCard.run {
-                root.setOnClickListener {
+                card.setOnClickListener {
                     navigateToDetail()
                 }
                 favoriteButton.setMaxFrame(30)
