@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/thumbnailView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/app_pasha"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="V,1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="LINE Pasha"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/descriptionView"
+                app:layout_constraintEnd_toStartOf="@+id/favoriteButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/thumbnailView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/descriptionView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Hello World!"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/favoriteButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/thumbnailView"
+                app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="#dddddd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/favoriteButton"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/favoriteButton"
+                android:layout_width="72dp"
+                android:layout_height="0dp"
+                android:background="?selectableItemBackground"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_rawRes="@raw/ic_lottie_favorite" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android-DarkTheme-CodeLab.iml" filepath="$PROJECT_DIR$/Android-DarkTheme-CodeLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/end/end.iml" filepath="$PROJECT_DIR$/end/end.iml" />
       <module fileurl="file://$PROJECT_DIR$/start/start.iml" filepath="$PROJECT_DIR$/start/start.iml" />
     </modules>
   </component>

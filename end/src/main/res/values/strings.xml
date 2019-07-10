@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DarkTheme CodeLab</string>
+    <string name="title_main">Home</string>
+    <string name="action_filter">Filter</string>
+</resources>
