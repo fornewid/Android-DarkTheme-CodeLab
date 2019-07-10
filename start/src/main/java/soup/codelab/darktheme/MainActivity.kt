@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             fun View.setSelectedIfDarkTheme() {
-                isSelected = DarkTheme.isEnabled(context)
+                isSelected = DarkTheme.isEnabled()
             }
             dayNightToggleButton.setSelectedIfDarkTheme()
             dayNightToggleButton.setOnClickListener {
