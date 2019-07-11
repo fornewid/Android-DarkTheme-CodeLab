@@ -102,7 +102,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun navigateToWeb() {
-        startActivity(Intent(this, WebActivity::class.java))
+        startActivity(Intent(this, WhaleActivity::class.java))
     }
 
     private fun navigateToDetail() {

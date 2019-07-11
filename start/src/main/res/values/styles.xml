@@ -16,9 +16,9 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
-    <style name="AppTheme.Web" parent="Theme.AppCompat.Light" />
+    <style name="AppTheme.Whale" parent="Theme.AppCompat.Light" />
 
     <!-- TODO: STEP7 - Layer your themes for re-use.
-    <style name="AppTheme.Web" parent="Base.Theme.Web" />
+    <style name="AppTheme.Whale" parent="Base.Theme.Whale" />
     -->
 </resources>

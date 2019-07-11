@@ -6,14 +6,14 @@ import android.view.LayoutInflater
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
-import soup.codelab.darktheme.databinding.WebActivityBinding
+import soup.codelab.darktheme.databinding.WhaleActivityBinding
 
-class WebActivity : AppCompatActivity() {
+class WhaleActivity : AppCompatActivity() {
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        WebActivityBinding.inflate(LayoutInflater.from(this)).apply {
+        WhaleActivityBinding.inflate(LayoutInflater.from(this)).apply {
             setContentView(root)
             webView.settings.javaScriptEnabled = true
             webView.webViewClient = HelpClient()

@@ -25,7 +25,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".DetailActivity" />
         <activity
-            android:name=".WebActivity"
-            android:theme="@style/AppTheme.Web" />
+            android:name=".WhaleActivity"
+            android:label="@string/title_whale"
+            android:theme="@style/AppTheme.Whale" />
     </application>
 </manifest>
