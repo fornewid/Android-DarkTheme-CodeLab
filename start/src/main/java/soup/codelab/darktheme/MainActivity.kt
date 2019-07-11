@@ -42,6 +42,15 @@ class MainActivity : AppCompatActivity() {
                 card.setOnClickListener {
                     navigateToDetail()
                 }
+
+                /** TODO: STEP4 - Set 'Lottie' animation dynamically.
+                favoriteButton.setAnimationAsync(if (DarkTheme.isEnabled()) {
+                    R.raw.ic_lottie_favorite_night
+                } else {
+                    R.raw.ic_lottie_favorite_day
+                })
+                */
+                favoriteButton.setAnimation(R.raw.ic_lottie_favorite_day)
                 favoriteButton.setMaxFrame(30)
                 favoriteButton.setOnClickListener {
                     val wasSelected = it.isSelected

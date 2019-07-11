@@ -42,6 +42,11 @@ class MainActivity : AppCompatActivity() {
                 card.setOnClickListener {
                     navigateToDetail()
                 }
+                favoriteButton.setAnimationAsync(if (DarkTheme.isEnabled()) {
+                    R.raw.ic_lottie_favorite_night
+                } else {
+                    R.raw.ic_lottie_favorite_day
+                })
                 favoriteButton.setMaxFrame(30)
                 favoriteButton.setOnClickListener {
                     val wasSelected = it.isSelected
