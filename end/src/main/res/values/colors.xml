@@ -12,4 +12,6 @@
     <color name="colorDivider">#22000000</color>
     <color name="colorBorder">#33000000</color>
     <color name="colorName">#dd000000</color>
+    <color name="colorError">#ee4b4b</color>
+    <color name="colorOnError">#ffffff</color>
 </resources>

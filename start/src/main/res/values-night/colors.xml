@@ -13,5 +13,7 @@
     <color name="colorDivider">#22ffffff</color>
     <color name="colorBorder">#33ffffff</color>
     <color name="colorName">#ddffffff</color>
+    <color name="colorError">#ff7f77</color>
+    <color name="colorOnError">#202020</color>
     -->
 </resources>

@@ -27,7 +27,7 @@
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
             android:text="Network is offline."
-            android:textColor="#FFFFFF"
+            android:textColor="@color/colorOnError"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
