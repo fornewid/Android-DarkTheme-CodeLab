@@ -20,6 +20,9 @@
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:title="Home" />
+            <!--TODO: STEP5 - Use DayNight theme.
+                app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight"
+            -->
 
         </com.google.android.material.appbar.AppBarLayout>
 
