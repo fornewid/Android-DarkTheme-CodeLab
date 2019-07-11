@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO: STEP2 - Declare '-night' colors.
+    <color name="colorPrimary">#121212</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#00c300</color>
+    <color name="colorBackground">#121212</color>
+    <color name="colorText">#ffffff</color>
+    <color name="colorIcon">#ffffff</color>
+    <color name="colorSurface">#121212</color>
+    <color name="colorTagBackground">#11ffffff</color>
+    <color name="colorTagText">#ffffff</color>
+    <color name="colorDivider">#22ffffff</color>
+    <color name="colorBorder">#33ffffff</color>
+    <color name="colorName">#22ffffff</color>
+    -->
+</resources>
