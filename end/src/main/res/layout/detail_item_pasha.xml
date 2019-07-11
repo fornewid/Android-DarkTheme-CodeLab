@@ -43,7 +43,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             android:text="LINE Pasha"
-            android:textColor="#333333"
+            android:textColor="@color/colorName"
             android:textSize="14sp"
             android:visibility="@{item.concat ? View.GONE : View.VISIBLE}"
             app:layout_constraintBottom_toTopOf="@id/messageView"
