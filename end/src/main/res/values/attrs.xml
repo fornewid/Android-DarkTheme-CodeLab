@@ -4,4 +4,7 @@
         <attr name="borderColor" format="color" />
         <attr name="borderWidth" format="dimension" />
     </declare-styleable>
+
+    <attr name="colorOnBackground" format="color" />
+
 </resources>

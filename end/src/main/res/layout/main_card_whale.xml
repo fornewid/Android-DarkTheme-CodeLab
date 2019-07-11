@@ -61,7 +61,8 @@
                 android:id="@+id/divider"
                 android:layout_width="1dp"
                 android:layout_height="0dp"
-                android:background="@color/colorDivider"
+                android:background="#ffffff"
+                android:backgroundTint="@color/divider"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/favoriteButton"
                 app:layout_constraintTop_toTopOf="parent" />

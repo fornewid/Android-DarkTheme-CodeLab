@@ -5,6 +5,11 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorBackground">@color/colorBackground</item>
+
+
+        <item name="colorOnBackground">@android:color/white</item>
+
+
     </style>
 
     <style name="AppTheme.Splash">

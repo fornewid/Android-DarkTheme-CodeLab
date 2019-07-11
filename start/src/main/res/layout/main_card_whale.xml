@@ -65,6 +65,10 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/favoriteButton"
                 app:layout_constraintTop_toTopOf="parent" />
+            <!-- TODO: STEP6 - Use color attribute.
+                android:background="#ffffff"
+                android:backgroundTint="@color/divider"
+            -->
 
             <ImageView
                 android:id="@+id/favoriteButton"
