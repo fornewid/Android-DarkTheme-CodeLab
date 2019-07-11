@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".HomeActivity" />
-        <activity android:name=".DetailActivity" />
+        <activity android:name=".PashaActivity" />
         <activity
             android:name=".WhaleActivity"
             android:label="@string/title_whale"

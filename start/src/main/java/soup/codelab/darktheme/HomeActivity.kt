@@ -40,7 +40,7 @@ class HomeActivity : AppCompatActivity() {
             }
             pashaCard.run {
                 card.setOnClickListener {
-                    navigateToDetail()
+                    navigateToPasha()
                 }
 
                 /** TODO: STEP4 - Set 'Lottie' animation dynamically.
@@ -109,7 +109,7 @@ class HomeActivity : AppCompatActivity() {
         startActivity(Intent(this, WhaleActivity::class.java))
     }
 
-    private fun navigateToDetail() {
+    private fun navigateToPasha() {
         startActivity(Intent(this, PashaActivity::class.java))
     }
 }

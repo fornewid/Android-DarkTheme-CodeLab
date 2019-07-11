@@ -7,13 +7,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
-import soup.codelab.darktheme.end.databinding.DetailActivityBinding
+import soup.codelab.darktheme.end.databinding.PashaActivityBinding
 
-class DetailActivity : AppCompatActivity() {
+class PashaActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        DetailActivityBinding.inflate(LayoutInflater.from(this)).apply {
+        PashaActivityBinding.inflate(LayoutInflater.from(this)).apply {
             setContentView(root)
             setSupportActionBar(toolbar)
             toolbar.setNavigationOnClickListener {
@@ -25,7 +25,7 @@ class DetailActivity : AppCompatActivity() {
 
     class ListAdapter : RecyclerView.Adapter<ItemViewHolder>() {
 
-        private val list = DetailItemUiModel.createDummyList()
+        private val list = PashaItemUiModel.createDummyList()
 
         init {
             notifyDataSetChanged()
@@ -49,20 +49,20 @@ class DetailActivity : AppCompatActivity() {
 
         override fun getItemViewType(position: Int): Int {
             return when (list[position]) {
-                is DetailItemUiModel.Tag -> TYPE_TAG
-                is DetailItemUiModel.Error -> TYPE_ERROR
-                is DetailItemUiModel.Pasha -> TYPE_PASHA
-                is DetailItemUiModel.SOUP -> TYPE_SOUP
+                is PashaItemUiModel.Tag -> TYPE_TAG
+                is PashaItemUiModel.Error -> TYPE_ERROR
+                is PashaItemUiModel.Pasha -> TYPE_PASHA
+                is PashaItemUiModel.SOUP -> TYPE_SOUP
             }
         }
 
         private fun getLayoutIdOf(viewType: Int): Int {
             return when (viewType) {
-                TYPE_TAG -> R.layout.detail_item_tag
-                TYPE_ERROR -> R.layout.detail_item_error
-                TYPE_PASHA -> R.layout.detail_item_pasha
-                TYPE_SOUP -> R.layout.detail_item_soup
-                else -> R.layout.detail_item_space
+                TYPE_TAG -> R.layout.pasha_item_tag
+                TYPE_ERROR -> R.layout.pasha_item_error
+                TYPE_PASHA -> R.layout.pasha_item_pasha
+                TYPE_SOUP -> R.layout.pasha_item_soup
+                else -> R.layout.pasha_item_space
             }
         }
 
@@ -78,7 +78,7 @@ class DetailActivity : AppCompatActivity() {
         private val binding: ViewDataBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: DetailItemUiModel?) {
+        fun bind(item: PashaItemUiModel?) {
             binding.setVariable(BR.item, item)
             binding.executePendingBindings()
         }

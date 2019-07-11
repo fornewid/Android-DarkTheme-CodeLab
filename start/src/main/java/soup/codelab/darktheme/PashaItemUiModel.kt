@@ -1,18 +1,18 @@
 package soup.codelab.darktheme
 
-sealed class DetailItemUiModel {
+sealed class PashaItemUiModel {
 
-    object Error : DetailItemUiModel()
+    object Error : PashaItemUiModel()
 
-    class Tag(val message: String) : DetailItemUiModel()
+    class Tag(val message: String) : PashaItemUiModel()
 
-    class Pasha(val message: String, val concat: Boolean = false) : DetailItemUiModel()
+    class Pasha(val message: String, val concat: Boolean = false) : PashaItemUiModel()
 
-    class SOUP(val message: CharSequence, val concat: Boolean = false) : DetailItemUiModel()
+    class SOUP(val message: CharSequence, val concat: Boolean = false) : PashaItemUiModel()
 
     companion object {
 
-        fun createDummyList(): List<DetailItemUiModel> {
+        fun createDummyList(): List<PashaItemUiModel> {
             return listOf(
                 SOUP("Android Q has a dark theme! 😍"),
                 Pasha("Um..‍"),

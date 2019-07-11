@@ -40,7 +40,7 @@ class HomeActivity : AppCompatActivity() {
             }
             pashaCard.run {
                 card.setOnClickListener {
-                    navigateToDetail()
+                    navigateToPasha()
                 }
                 favoriteButton.setAnimationAsync(if (DarkTheme.isEnabled()) {
                     R.raw.ic_lottie_favorite_night
@@ -105,7 +105,7 @@ class HomeActivity : AppCompatActivity() {
         startActivity(Intent(this, WhaleActivity::class.java))
     }
 
-    private fun navigateToDetail() {
-        startActivity(Intent(this, DetailActivity::class.java))
+    private fun navigateToPasha() {
+        startActivity(Intent(this, PashaActivity::class.java))
     }
 }

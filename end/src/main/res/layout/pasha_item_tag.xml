@@ -2,13 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".DetailActivity">
+    tools:context=".PashaActivity">
 
     <data>
 
         <variable
             name="item"
-            type="soup.codelab.darktheme.end.DetailItemUiModel.Error" />
+            type="soup.codelab.darktheme.end.PashaItemUiModel.Tag" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,22 +17,20 @@
 
         <TextView
             android:id="@+id/descriptionView"
-            android:layout_width="0dp"
-            android:layout_height="28dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/detail_bg_error"
-            android:drawableStart="@drawable/ic_round_error_outline"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:background="@drawable/pasha_bg_tag"
             android:gravity="center"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp"
-            android:text="Network is offline."
-            android:textColor="@color/colorOnError"
-            android:textSize="14sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="@{item.message}"
+            android:textColor="@color/colorTagText"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Hello World!" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
