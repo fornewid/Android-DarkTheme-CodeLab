@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity">
+    tools:context=".HomeActivity">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
 
             <include
                 android:id="@+id/whaleCard"
-                layout="@layout/main_card_whale"
+                layout="@layout/home_card_whale"
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_margin="8dp"
@@ -44,7 +44,7 @@
 
             <include
                 android:id="@+id/pashaCard"
-                layout="@layout/main_card_pasha"
+                layout="@layout/home_card_pasha"
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_margin="8dp"
@@ -65,7 +65,7 @@
 
         <include
             android:id="@+id/bottomSheetPanel"
-            layout="@layout/main_bottom_sheet"
+            layout="@layout/home_bottom_sheet"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="?actionBarSize"

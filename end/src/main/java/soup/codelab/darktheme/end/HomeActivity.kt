@@ -11,22 +11,22 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_COLLAPSED
 import com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_HIDDEN
-import soup.codelab.darktheme.end.databinding.MainActivityBinding
+import soup.codelab.darktheme.end.databinding.HomeActivityBinding
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<View>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        MainActivityBinding.inflate(LayoutInflater.from(this)).apply {
+        HomeActivityBinding.inflate(LayoutInflater.from(this)).apply {
             setContentView(root)
 
             setSupportActionBar(toolbar)
 
             whaleCard.run {
                 card.setOnClickListener {
-                    navigateToWeb()
+                    navigateToWhale()
                 }
                 favoriteButton.setOnClickListener {
                     val wasSelected = it.isSelected
@@ -81,12 +81,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main_activity, menu)
+        menuInflater.inflate(R.menu.home_activity, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        when (item?.itemId) {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
             R.id.action_filter ->
                 bottomSheetBehavior.state = STATE_COLLAPSED
         }
@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
         super.onBackPressed()
     }
 
-    private fun navigateToWeb() {
+    private fun navigateToWhale() {
         startActivity(Intent(this, WhaleActivity::class.java))
     }
 
