@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO: STEP7 - Layer your themes for re-use.
+    <style name="Platform.Theme.Web" parent="Theme.AppCompat.DayNight" />
+    <style name="Base.Theme.Web" parent="Platform.Theme.Web">
+        <item name="android:isLightTheme">true</item>
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    -->
+</resources>

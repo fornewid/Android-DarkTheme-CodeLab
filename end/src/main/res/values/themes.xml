@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Platform.Theme.Web" parent="Theme.AppCompat.DayNight" />
+    <style name="Base.Theme.Web" parent="Platform.Theme.Web" />
+
+</resources>
