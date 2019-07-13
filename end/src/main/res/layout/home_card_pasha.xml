@@ -4,6 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".HomeActivity">
 
+    <data>
+
+        <import type="soup.codelab.darktheme.end.R" />
+    </data>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -75,7 +80,9 @@
                 android:padding="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_rawResDay="@{R.raw.ic_lottie_favorite_day}"
+                app:lottie_rawResNight="@{R.raw.ic_lottie_favorite_night}" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
