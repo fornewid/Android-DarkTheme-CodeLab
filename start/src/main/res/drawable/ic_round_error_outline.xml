@@ -3,7 +3,7 @@
     android:height="24dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
-    <!-- TODO: TODO: STEP3 - Tinting icons.
+    <!-- TODO: TODO: STEP3 - Tinting icons
     android:tint="@color/colorOnError"
     -->
     <path

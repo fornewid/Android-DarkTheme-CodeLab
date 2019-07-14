@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- TODO: STEP7 - Layer your themes for re-use.
+    <!-- TODO: STEP7 - Layer your themes
     <style name="Platform.Theme.Whale" parent="Theme.AppCompat.DayNight" />
     <style name="Base.Theme.Whale" parent="Platform.Theme.Whale">
         <item name="android:isLightTheme">true</item>

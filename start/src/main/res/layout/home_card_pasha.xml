@@ -5,7 +5,7 @@
     tools:context=".HomeActivity">
 
     <data>
-        <!--TODO: STEP4 - Set 'Lottie' animation dynamically.
+        <!--TODO: STEP4 - Set 'Lottie' animation dynamically
         <import type="soup.codelab.darktheme.R" />
         -->
     </data>
@@ -71,7 +71,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/favoriteButton"
                 app:layout_constraintTop_toTopOf="parent" />
-            <!-- TODO: STEP6 - Use color attribute.
+            <!-- TODO: STEP5 - Use color attribute
                 android:background="#ffffff"
                 android:backgroundTint="@color/divider"
             -->
@@ -86,7 +86,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:lottie_rawRes="@raw/ic_lottie_favorite_day" />
-            <!--TODO: STEP4 - Set 'Lottie' animation dynamically.
+            <!--TODO: STEP4 - Set 'Lottie' animation dynamically
                 app:lottie_rawResDay="@{R.raw.ic_lottie_favorite_day}"
                 app:lottie_rawResNight="@{R.raw.ic_lottie_favorite_night}"
             -->

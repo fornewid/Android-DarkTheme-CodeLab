@@ -1,15 +1,15 @@
 <resources>
-    <!-- TODO: STEP1 - Declare '-night' style.
+    <!-- TODO: STEP2 - Declare '-night' resources
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorBackground">@color/colorBackground</item>
     -->
-        <!-- TODO: STEP6 - Use color attribute.
+        <!-- TODO: STEP5 - Use color attribute
         <item name="colorOnBackground">@android:color/black</item>
         -->
-    <!-- TODO: STEP1 - Declare '-night' style.
+    <!-- TODO: STEP2 - Declare '-night' resources
     </style>
 
     <style name="AppTheme.Splash">
@@ -18,7 +18,7 @@
 
     <style name="AppTheme.Whale" parent="Theme.AppCompat" />
     -->
-    <!-- TODO: STEP7 - Layer your themes for re-use.
+    <!-- TODO: STEP7 - Layer your themes
     <style name="AppTheme.Whale" parent="Base.Theme.Whale" />
     -->
 </resources>
