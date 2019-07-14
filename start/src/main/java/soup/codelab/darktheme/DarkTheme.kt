@@ -15,10 +15,6 @@ object DarkTheme {
         AppCompatDelegate.setDefaultNightMode(nightMode)
     }
 
-    fun isEnabled(): Boolean {
-        return AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES
-    }
-
     fun isEnabled(context: Context): Boolean {
         return context.resources.configuration.uiMode and
                 Configuration.UI_MODE_NIGHT_MASK ==
