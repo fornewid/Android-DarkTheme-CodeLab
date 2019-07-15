@@ -21,4 +21,11 @@
     <!-- TODO: STEP7 - Layer your themes
     <style name="AppTheme.Whale" parent="Base.Theme.Whale" />
     -->
+    <!-- TODO: STEP8 - Get Lighter Surface
+    <style name="AppTheme.BottomSheet" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    -->
 </resources>

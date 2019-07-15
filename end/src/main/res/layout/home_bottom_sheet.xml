@@ -7,8 +7,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorBackground"
-        android:elevation="8dp">
+        android:elevation="8dp"
+        android:theme="@style/AppTheme.BottomSheet"
+        app:useMaterialBackground="@{true}">
 
         <TextView
             android:id="@+id/title"
