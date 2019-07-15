@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:elevation="8dp"
         android:theme="@style/AppTheme.BottomSheet"
-        app:useMaterialBackground="@{true}">
+        app:elevationOverlaysEnabled="@{true}">
 
         <TextView
             android:id="@+id/title"

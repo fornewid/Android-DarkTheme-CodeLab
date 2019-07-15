@@ -11,7 +11,7 @@
         android:elevation="8dp">
     <!-- TODO: STEP8 - Get Lighter Surface
         android:theme="@style/AppTheme.BottomSheet"
-        app:useMaterialBackground="@{true}"
+        app:elevationOverlaysEnabled="@{true}"
     -->
 
         <TextView
