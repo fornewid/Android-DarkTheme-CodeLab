@@ -63,7 +63,7 @@
                 app:layout_constraintStart_toEndOf="@+id/thumbnailView"
                 app:layout_constraintTop_toBottomOf="@+id/titleView" />
 
-            <View
+            <ImageView
                 android:id="@+id/divider"
                 android:layout_width="1dp"
                 android:layout_height="0dp"
@@ -73,7 +73,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
             <!-- TODO: STEP5 - Use color attribute
                 android:background="#ffffff"
-                android:backgroundTint="@color/divider"
+                app:backgroundTint="@color/divider"
             -->
 
             <com.airbnb.lottie.LottieAnimationView
