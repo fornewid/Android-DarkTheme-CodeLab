@@ -23,10 +23,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".HomeActivity" />
-        <activity android:name=".PashaActivity" />
+        <activity android:name=".MoopActivity" />
         <activity
-            android:name=".WhaleActivity"
-            android:label="@string/title_whale"
-            android:theme="@style/AppTheme.Whale" />
+            android:name=".GithubActivity"
+            android:label="@string/title_github"
+            android:theme="@style/AppTheme.Github" />
     </application>
 </manifest>

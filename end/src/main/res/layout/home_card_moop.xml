@@ -4,6 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".HomeActivity">
 
+    <data>
+
+        <import type="soup.codelab.darktheme.end.R" />
+    </data>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -20,7 +25,7 @@
                 android:id="@+id/thumbnailView"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:src="@drawable/app_whale"
+                android:src="@drawable/app_moop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="V,1:1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="NAVER Whale"
+                android:text="Moop"
                 android:textColor="@color/colorText"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -61,25 +66,23 @@
                 android:id="@+id/divider"
                 android:layout_width="1dp"
                 android:layout_height="0dp"
-                android:background="@color/colorDivider"
+                android:background="#ffffff"
+                app:backgroundTint="@color/divider"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/favoriteButton"
                 app:layout_constraintTop_toTopOf="parent" />
-            <!-- TODO: STEP5 - Use color attribute
-                android:background="#ffffff"
-                app:backgroundTint="@color/divider"
-            -->
 
-            <ImageView
+            <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/favoriteButton"
                 android:layout_width="72dp"
                 android:layout_height="0dp"
                 android:background="?selectableItemBackground"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_round_favorite"
+                android:padding="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_rawResDay="@{R.raw.ic_lottie_favorite_day}"
+                app:lottie_rawResNight="@{R.raw.ic_lottie_favorite_night}" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

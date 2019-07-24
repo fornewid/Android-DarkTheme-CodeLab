@@ -2,13 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".PashaActivity">
+    tools:context=".MoopActivity">
 
     <data>
 
         <variable
             name="item"
-            type="soup.codelab.darktheme.PashaItemUiModel.Tag" />
+            type="soup.codelab.darktheme.MoopItemUiModel.Tag" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,7 +19,7 @@
             android:id="@+id/descriptionView"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
-            android:background="@drawable/pasha_bg_tag"
+            android:background="@drawable/moop_bg_tag"
             android:gravity="center"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"

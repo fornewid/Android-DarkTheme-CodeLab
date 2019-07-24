@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".PashaActivity">
+    tools:context=".MoopActivity">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="item"
-            type="soup.codelab.darktheme.PashaItemUiModel.SOUP" />
+            type="soup.codelab.darktheme.MoopItemUiModel.SOUP" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -59,7 +59,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:autoLink="web"
-            android:background="@drawable/pasha_bg_soup"
+            android:background="@drawable/moop_bg_soup"
             android:paddingStart="12dp"
             android:paddingTop="8dp"
             android:paddingEnd="12dp"

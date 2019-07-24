@@ -2,6 +2,6 @@
     <string name="app_name">DarkTheme CodeLab</string>
     <string name="title_home">Home</string>
     <string name="action_filter">Filter</string>
-    <string name="title_whale">NAVER Whale</string>
-    <string name="title_pasha">LINE Pasha</string>
+    <string name="title_github">Github</string>
+    <string name="title_moop">Moop</string>
 </resources>

@@ -24,9 +24,9 @@ class HomeActivity : AppCompatActivity() {
 
             setSupportActionBar(toolbar)
 
-            whaleCard.run {
+            soupCard.run {
                 card.setOnClickListener {
-                    navigateToWhale()
+                    navigateToGithub()
                 }
                 favoriteButton.setOnClickListener {
                     val wasSelected = it.isSelected
@@ -38,9 +38,9 @@ class HomeActivity : AppCompatActivity() {
                     it.isSelected = wasSelected.not()
                 }
             }
-            pashaCard.run {
+            moopCard.run {
                 card.setOnClickListener {
-                    navigateToPasha()
+                    navigateToMoop()
                 }
                 favoriteButton.setMaxFrame(30)
                 favoriteButton.setOnClickListener {
@@ -96,11 +96,11 @@ class HomeActivity : AppCompatActivity() {
         super.onBackPressed()
     }
 
-    private fun navigateToWhale() {
-        startActivity(Intent(this, WhaleActivity::class.java))
+    private fun navigateToGithub() {
+        startActivity(Intent(this, GithubActivity::class.java))
     }
 
-    private fun navigateToPasha() {
-        startActivity(Intent(this, PashaActivity::class.java))
+    private fun navigateToMoop() {
+        startActivity(Intent(this, MoopActivity::class.java))
     }
 }

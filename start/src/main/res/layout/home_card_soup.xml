@@ -20,7 +20,7 @@
                 android:id="@+id/thumbnailView"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:src="@drawable/app_whale"
+                android:src="@drawable/ic_profile_soup"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="V,1:1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="NAVER Whale"
+                android:text="SOUP"
                 android:textColor="@color/colorText"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -61,11 +61,14 @@
                 android:id="@+id/divider"
                 android:layout_width="1dp"
                 android:layout_height="0dp"
-                android:background="#ffffff"
-                app:backgroundTint="@color/divider"
+                android:background="@color/colorDivider"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/favoriteButton"
                 app:layout_constraintTop_toTopOf="parent" />
+            <!-- TODO: STEP5 - Use color attribute
+                android:background="#ffffff"
+                app:backgroundTint="@color/divider"
+            -->
 
             <ImageView
                 android:id="@+id/favoriteButton"

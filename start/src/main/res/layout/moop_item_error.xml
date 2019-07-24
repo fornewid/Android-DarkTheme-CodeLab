@@ -2,13 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".PashaActivity">
+    tools:context=".MoopActivity">
 
     <data>
 
         <variable
             name="item"
-            type="soup.codelab.darktheme.end.PashaItemUiModel.Error" />
+            type="soup.codelab.darktheme.MoopItemUiModel.Error" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,7 +21,7 @@
             android:layout_height="28dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/pasha_bg_error"
+            android:background="@drawable/moop_bg_error"
             android:drawableStart="@drawable/ic_round_error_outline"
             android:gravity="center"
             android:paddingStart="8dp"

@@ -5,8 +5,9 @@
     tools:context=".HomeActivity">
 
     <data>
-
-        <import type="soup.codelab.darktheme.end.R" />
+        <!--TODO: STEP4 - Set 'Lottie' animation dynamically
+        <import type="soup.codelab.darktheme.R" />
+        -->
     </data>
 
     <androidx.cardview.widget.CardView
@@ -25,7 +26,7 @@
                 android:id="@+id/thumbnailView"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:src="@drawable/app_pasha"
+                android:src="@drawable/app_moop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="V,1:1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="LINE Pasha"
+                android:text="Moop"
                 android:textColor="@color/colorText"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -66,11 +67,14 @@
                 android:id="@+id/divider"
                 android:layout_width="1dp"
                 android:layout_height="0dp"
-                android:background="#ffffff"
-                app:backgroundTint="@color/divider"
+                android:background="@color/colorDivider"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/favoriteButton"
                 app:layout_constraintTop_toTopOf="parent" />
+            <!-- TODO: STEP5 - Use color attribute
+                android:background="#ffffff"
+                app:backgroundTint="@color/divider"
+            -->
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/favoriteButton"
@@ -81,8 +85,11 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:lottie_rawRes="@raw/ic_lottie_favorite_day" />
+            <!--TODO: STEP4 - Set 'Lottie' animation dynamically
                 app:lottie_rawResDay="@{R.raw.ic_lottie_favorite_day}"
-                app:lottie_rawResNight="@{R.raw.ic_lottie_favorite_night}" />
+                app:lottie_rawResNight="@{R.raw.ic_lottie_favorite_night}"
+            -->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

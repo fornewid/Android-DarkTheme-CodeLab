@@ -6,8 +6,8 @@
     tools:context=".SplashActivity">
 
     <ImageView
-        android:layout_width="125dp"
-        android:layout_height="24dp"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
         android:layout_gravity="center"
-        android:src="@drawable/ic_logo_naver" />
+        android:src="@drawable/ic_logo_soup" />
 </FrameLayout>

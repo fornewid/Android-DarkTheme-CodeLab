@@ -1,4 +1,4 @@
-package soup.codelab.darktheme
+package soup.codelab.darktheme.end
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,13 +7,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
-import soup.codelab.darktheme.databinding.PashaActivityBinding
+import soup.codelab.darktheme.end.databinding.MoopActivityBinding
 
-class PashaActivity : AppCompatActivity() {
+class MoopActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        PashaActivityBinding.inflate(LayoutInflater.from(this)).apply {
+        MoopActivityBinding.inflate(LayoutInflater.from(this)).apply {
             setContentView(root)
             setSupportActionBar(toolbar)
             toolbar.setNavigationOnClickListener {
@@ -25,7 +25,7 @@ class PashaActivity : AppCompatActivity() {
 
     class ListAdapter : RecyclerView.Adapter<ItemViewHolder>() {
 
-        private val list = PashaItemUiModel.createDummyList()
+        private val list = MoopItemUiModel.createDummyList()
 
         init {
             notifyDataSetChanged()
@@ -49,27 +49,27 @@ class PashaActivity : AppCompatActivity() {
 
         override fun getItemViewType(position: Int): Int {
             return when (list[position]) {
-                is PashaItemUiModel.Tag -> TYPE_TAG
-                is PashaItemUiModel.Error -> TYPE_ERROR
-                is PashaItemUiModel.Pasha -> TYPE_PASHA
-                is PashaItemUiModel.SOUP -> TYPE_SOUP
+                is MoopItemUiModel.Tag -> TYPE_TAG
+                is MoopItemUiModel.Error -> TYPE_ERROR
+                is MoopItemUiModel.Moop -> TYPE_MOOP
+                is MoopItemUiModel.SOUP -> TYPE_SOUP
             }
         }
 
         private fun getLayoutIdOf(viewType: Int): Int {
             return when (viewType) {
-                TYPE_TAG -> R.layout.pasha_item_tag
-                TYPE_ERROR -> R.layout.pasha_item_error
-                TYPE_PASHA -> R.layout.pasha_item_pasha
-                TYPE_SOUP -> R.layout.pasha_item_soup
-                else -> R.layout.pasha_item_space
+                TYPE_TAG -> R.layout.moop_item_tag
+                TYPE_ERROR -> R.layout.moop_item_error
+                TYPE_MOOP -> R.layout.moop_item_moop
+                TYPE_SOUP -> R.layout.moop_item_soup
+                else -> R.layout.moop_item_space
             }
         }
 
         companion object {
             private const val TYPE_TAG = 0
             private const val TYPE_ERROR = 1
-            private const val TYPE_PASHA = 2
+            private const val TYPE_MOOP = 2
             private const val TYPE_SOUP = 3
         }
     }
@@ -78,7 +78,7 @@ class PashaActivity : AppCompatActivity() {
         private val binding: ViewDataBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: PashaItemUiModel?) {
+        fun bind(item: MoopItemUiModel?) {
             binding.setVariable(BR.item, item)
             binding.executePendingBindings()
         }

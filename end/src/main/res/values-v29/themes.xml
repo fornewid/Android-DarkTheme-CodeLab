@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Platform.Theme.Whale" parent="Theme.AppCompat.DayNight">
+    <style name="Platform.Theme.Github" parent="Theme.AppCompat.DayNight">
         <item name="android:forceDarkAllowed">true</item>
         <item name="android:isLightTheme">true</item>
     </style>

@@ -30,12 +30,12 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
             <include
-                android:id="@+id/whaleCard"
-                layout="@layout/home_card_whale"
+                android:id="@+id/soupCard"
+                layout="@layout/home_card_soup"
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_margin="8dp"
-                app:layout_constraintBottom_toTopOf="@id/pashaCard"
+                app:layout_constraintBottom_toTopOf="@id/moopCard"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -43,15 +43,15 @@
                 app:layout_constraintVertical_chainStyle="packed" />
 
             <include
-                android:id="@+id/pashaCard"
-                layout="@layout/home_card_pasha"
+                android:id="@+id/moopCard"
+                layout="@layout/home_card_moop"
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_margin="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/whaleCard" />
+                app:layout_constraintTop_toBottomOf="@id/soupCard" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
